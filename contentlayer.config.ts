@@ -6,6 +6,7 @@ export const Tale = defineDocumentType(() => ({
   fields: {
     title: { type: 'string', required: true },
     date: { type: 'date', required: true },
+    tagline: { type: 'string', required: true },
   },
   computedFields: {
     url: { type: 'string', resolve: (tale) => `/tales/${tale._raw.flattenedPath}` },
