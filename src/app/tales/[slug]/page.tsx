@@ -15,7 +15,7 @@ const TaleLayout = ({ params }: { params: { slug: string } }) => {
   if (!tale) throw new Error(`Tale not found for slug: ${params.slug}`)
 
   return (
-    <article className="mx-auto max-w-xl py-8">
+    <article className="mx-auto max-w-xl py-8 prose mx-auto">
       <div className="mb-4">
         <Link href="/" className="inline-block text-2xl hover:scale-110 transition-transform duration-300" aria-label="Back to top page">
           <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
