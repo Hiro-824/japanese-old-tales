@@ -5,7 +5,7 @@ import { allTales, Tale } from 'contentlayer/generated'
 function TaleCard(tale: Tale) {
   return (
     <Link href={tale.url}>
-      <div className="hover:bg-gray-100 p-4 rounded-lg">
+      <div className="p-4 rounded-lg transition-colors md:hover:bg-gray-100 active:bg-gray-200">
         <h2 className="mb-1 text-xl text-black">
           {tale.title}
         </h2>
@@ -19,7 +19,7 @@ export default function Home() {
   const tales = allTales.sort((a, b) => compareDesc(new Date(a.date), new Date(b.date)))
 
   return (
-    <div className="mx-auto max-w-xl py-8">
+    <div className="mx-auto max-w-xl py-8 px-4">
       <h1 className="mb-8 text-center text-2xl font-black">Japanese Old Tales</h1>
       {tales.map((tale, idx) => (
         <TaleCard key={idx} {...tale} />
