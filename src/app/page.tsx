@@ -4,14 +4,14 @@ import { allTales, Tale } from 'contentlayer/generated'
 
 function TaleCard(tale: Tale) {
   return (
-    <div className="mb-8">
-      <h2 className="mb-1 text-xl">
-        <Link href={tale.url} className="text-black-700 hover:text-black-900 dark:text-black-400">
+    <Link href={tale.url}>
+      <div className="mb-8">
+        <h2 className="mb-1 text-xl text-black-700 hover:text-black-900 dark:text-black-400">
           {tale.title}
-        </Link>
-      </h2>
-      <p className="text-sm text-gray-500">{tale.tagline}</p>
-    </div>
+        </h2>
+        <p className="text-sm text-gray-500">{tale.tagline}</p>
+      </div>
+    </Link>
   )
 }
 
