@@ -5,8 +5,8 @@ import { allTales, Tale } from 'contentlayer/generated'
 function TaleCard(tale: Tale) {
   return (
     <Link href={tale.url}>
-      <div className="mb-8">
-        <h2 className="mb-1 text-xl text-black-700 hover:text-black-900 dark:text-black-400">
+      <div className="hover:bg-gray-100 p-4 rounded-lg">
+        <h2 className="mb-1 text-xl text-black">
           {tale.title}
         </h2>
         <p className="text-sm text-gray-500">{tale.tagline}</p>
