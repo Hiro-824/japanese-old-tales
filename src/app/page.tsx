@@ -4,13 +4,14 @@ import { allTales, Tale } from 'contentlayer/generated'
 
 function TaleCard(tale: Tale) {
   return (
-    <Link href={tale.url}>
-      <div className="p-4 rounded-lg transition-colors md:hover:bg-gray-100 active:bg-gray-200">
-        <h2 className="mb-1 text-xl text-black">
-          {tale.title}
-        </h2>
-        <p className="text-sm text-gray-500">{tale.tagline}</p>
-      </div>
+    <Link 
+      href={tale.url}
+      className="block p-4 rounded-lg transition-colors md:hover:bg-gray-100 active:bg-gray-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
+    >
+      <h2 className="mb-1 text-xl text-black">
+        {tale.title}
+      </h2>
+      <p className="text-sm text-gray-500">{tale.tagline}</p>
     </Link>
   )
 }
@@ -21,8 +22,8 @@ export default function Home() {
   return (
     <div className="mx-auto max-w-xl py-8 px-4">
       <h1 className="mb-8 text-center text-2xl font-black">Japanese Old Tales</h1>
-      {tales.map((tale, idx) => (
-        <TaleCard key={idx} {...tale} />
+      {tales.map((tale) => (
+        <TaleCard key={tale.url} {...tale} />
       ))}
     </div>
   )

@@ -17,7 +17,11 @@ const TaleLayout = ({ params }: { params: { slug: string } }) => {
   return (
     <article className="prose mx-auto max-w-xl py-8 px-4">
       <div className="mb-4">
-        <Link href="/" className="inline-block text-2xl transition-transform hover:scale-110" aria-label="Back to top page">
+        <Link
+          href="/"
+          className="inline-block p-2 -m-2 text-2xl transition-transform rounded-full hover:bg-gray-100 hover:scale-110 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500 dark:hover:bg-gray-800"
+          aria-label="Back to top page"
+        >
           <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
             <path d="M224,128a8,8,0,0,1-8,8H59.31l58.35,58.34a8,8,0,0,1-11.32,11.32l-72-72a8,8,0,0,1,0-11.32l72-72a8,8,0,0,1,11.32,11.32L59.31,120H216A8,8,0,0,1,224,128Z"></path>
           </svg>
@@ -26,7 +30,7 @@ const TaleLayout = ({ params }: { params: { slug: string } }) => {
       <div className="mt-8 mb-8 text-left">
         <h1 className="text-3xl font-bold">{tale.title}</h1>
       </div>
-      <div className="[&>*]:mb-3 [&>*:last-child]:mb-0" dangerouslySetInnerHTML={{ __html: tale.body.html }} />
+      <div className="[&>*]:mb-3 [&>*:last-child]:mb-0 mb-60" dangerouslySetInnerHTML={{ __html: tale.body.html }} />
     </article>
   )
 }
