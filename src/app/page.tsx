@@ -6,7 +6,7 @@ function TaleCard(tale: Tale) {
   return (
     <Link 
       href={tale.url}
-      className="block p-4 rounded-lg transition-transform transition-colors hover:scale-105 md:hover:bg-gray-100 active:bg-gray-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
+      className="block p-4 rounded-lg transition-transform transition-colors active:scale-105 md:hover:scale-105 md:hover:bg-gray-100 active:bg-gray-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
     >
       <h2 className="mb-1 text-xl text-black">
         {tale.title}
