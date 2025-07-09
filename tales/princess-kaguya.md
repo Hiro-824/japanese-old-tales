@@ -4,7 +4,6 @@ date: 2025-07-02
 tagline: A tale of a beautiful princess born from a bamboo.
 ---
 
----
 ## The Mysterious Bamboo Girl
 
 A long time ago in Japan, there lived a kind old man and his wife. The old man, Sanuki no Miyatsuko, worked by cutting bamboo in the forest.
@@ -20,8 +19,6 @@ From that day on, something magical happened — every time the old man cut bamb
 The girl also grew incredibly fast. In just three months, she became a graceful young woman. Her beauty was so radiant, it seemed to fill the whole house with light.
 
 To give her a proper name, they invited a wise man. He named her **Kaguya-hime**, which means *“Shining Princess of the Bamboo.”* They celebrated with a joyful feast full of music and dancing.
-
----
 
 ## The Five Impossible Challenges
 
@@ -59,8 +56,6 @@ None of them succeeded.
 
 Kaguya felt sad when she heard Counselor Isonokami died from his injury. But none of the nobles won her heart.
 
----
-
 ## The Emperor’s Visit
 
 Even the Emperor of Japan heard about Princess Kaguya and sent a messenger to meet her. But she refused to see him.
@@ -74,8 +69,6 @@ She said softly,
 > “I am not from this world. You must let me go.”
 
 The Emperor left with a heavy heart. After that, he couldn’t forget her. He often sent her poems, and she replied with kind letters, but always stayed away.
-
----
 
 ## The Return to the Moon
 
@@ -104,8 +97,6 @@ Kaguya wrote letters to her parents and to the Emperor. She was given a shining 
 As soon as they put the robe on her, all her human memories and feelings disappeared. Her love and sorrow faded away.
 
 She stepped into the flying chariot and rose into the night sky, leaving Earth behind.
-
----
 
 ## The Smoke of Mount Fuji
 

@@ -4,8 +4,6 @@ date: 2025-07-02
 tagline: A boy born from a peach fights demons.
 ---
 
----
-
 ## The Giant Peach
 
 A long time ago in Japan, there lived an old man and an old woman. They were kind and hardworking. Every day, the man went to the mountains to cut wood, and the woman went to the river to wash clothes.
@@ -28,8 +26,6 @@ Inside was a baby boy!
 
 The couple was filled with joy. They named him **Momotaro**, which means **Peach Boy** in Japanese.
 
----
-
 ## A Brave Young Man
 
 Momotaro grew up strong and kind. He ate a lot and trained every day. By the time he was young, he was stronger than anyone in the village. People admired him.
@@ -41,8 +37,6 @@ Momotaro stood up and said,
 > “I will go to Oni Island and stop them. Please give me some food for the journey.”
 
 His mother made him **kibi dango** (millet dumplings), a special Japanese snack. His father gave him a sword. With his bag full of dumplings, Momotaro set off.
-
----
 
 ## Making New Friends
 
@@ -68,8 +62,6 @@ Then, a pheasant flew down.
 
 Momotaro gave the bird a dumpling. Now, with the dog, the monkey, and the pheasant, Momotaro was ready to face the Oni.
 
----
-
 ## The Fight on Oni Island
 
 They reached **Onigashima**, or **Demon Island**, where the Oni lived. A big fortress stood on the shore, guarded by strong demons.
@@ -83,8 +75,6 @@ At last, they reached the Oni leader — a huge, scary demon.
 > “We give up!” the Oni shouted. “We’ll return everything we stole! Please don’t hurt us!”
 
 Momotaro agreed. The Oni gave back the gold and treasure. Momotaro and his friends brought it home.
-
----
 
 ## A Happy Ending
 
