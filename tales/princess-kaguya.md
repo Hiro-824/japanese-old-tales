@@ -4,114 +4,119 @@ date: 2025-07-02
 tagline: A tale of a beautiful princess born from a bamboo.
 ---
 
-## Prologue: The Birth of Princess Kaguya
+---
+## The Mysterious Bamboo Girl
 
-Long, long ago, there lived an old bamboo cutter and his wife. The old man, whose name was Sanuki no Miyatsuko, made his living gathering bamboo to be used for all sorts of things.
+A long time ago in Japan, there lived a kind old man and his wife. The old man, Sanuki no Miyatsuko, worked by cutting bamboo in the forest.
 
-One day, as the old man went into the bamboo grove, he came upon a stalk that was glowing with a brilliant light. Puzzled, he drew closer and looked inside. There, he found a tiny, lovely girl, only about three inches tall. The old man and his wife decided to raise her as their own child, for they had none.
+One day, while walking through the bamboo grove, he saw something strange — a glowing stalk of bamboo! Curious, he walked over and cut it open.
 
-After that day, the old man often found gold inside the bamboo stalks he cut, and he and his wife soon became very wealthy. The child they had found grew astonishingly fast, and in just three months, she had become a beautiful young lady. They held a ceremony to tie up her hair for the first time and dressed her in fine robes.
+Inside was a tiny, beautiful girl, only about three inches tall.
 
-Her beauty was otherworldly, so much so that her presence filled their home with light, leaving no corner in darkness. Whenever the old man felt his heart ache with sadness or worry, he had only to look at his daughter, and his troubles would vanish.
+He rushed home to show his wife. The couple had no children of their own, so they decided to raise the little girl as their daughter.
 
-Because she had grown so wonderfully, they sought out a wise man named Mimurodo Imube no Akita to give her a proper name. He named her **Nayotake no Kaguya-hime**, "the Shining Princess of the Supple Bamboo." To celebrate, they held a grand feast for three days, filled with poetry, music, and dancing.
+From that day on, something magical happened — every time the old man cut bamboo, he found gold hidden inside. Soon, they became very rich.
 
-## The Impossible Tasks of the Five Nobles
+The girl also grew incredibly fast. In just three months, she became a graceful young woman. Her beauty was so radiant, it seemed to fill the whole house with light.
 
-Word of Princess Kaguya's beauty spread, and men from all walks of life, rich and poor, fell in love with her from mere rumor alone. Countless young nobles began to linger around the old bamboo cutter's house, hoping to catch a glimpse of her. They would stay up all night, pacing outside the gates and digging holes in the fence to peer through, even though no one, not even those inside the house, could easily see her.
+To give her a proper name, they invited a wise man. He named her **Kaguya-hime**, which means *“Shining Princess of the Bamboo.”* They celebrated with a joyful feast full of music and dancing.
 
-Eventually, most gave up. Only five persistent nobles, all famous for their romantic passions, remained. They came to her house day and night, refusing to be turned away. These five were Prince Ishitsukuri, Prince Kuramochi, the Minister of the Right Abe no Mimuraji, the Grand Counselor Otomo no Miyuki, and the Middle Counselor Isonokami no Maro.
+---
 
-Seeing this, the old man spoke to Kaguya.
+## The Five Impossible Challenges
 
-> "My dear child, who is as precious to me as a Buddha. I am now seventy, and I do not know if I will be here tomorrow. In this world, men and women marry. You cannot remain this way forever."
+News of Kaguya-hime’s beauty spread far and wide. People from all over came just hoping to catch a glimpse of her.
 
-Princess Kaguya replied:
+Many gave up, but five noblemen never stopped trying. They were:
 
-> "But I do not wish to marry someone whose heart I do not truly know. If he were unfaithful, I would be filled with regret. Please tell the nobles this: I will serve the man who can bring me what I desire. Announce to them the challenges I have set."
+* **Prince Ishitsukuri**
+* **Prince Kuramochi**
+* **Minister Abe**
+* **Counselor Otomo**
+* **Counselor Isonokami**
 
-That night, when the five nobles gathered, the old man relayed Kaguya's message. She had set an impossible task for each of them.
+Her adoptive father told Kaguya, “You should choose a husband. I am old, and I want to see you happy.”
 
-*   **For Prince Ishitsukuri:** The stone begging bowl of the Buddha.
-*   **For Prince Kuramochi:** A jeweled branch from the mythical island of Horai—one with a root of silver, a stem of gold, and fruits of pearl.
-*   **For the Minister Abe:** The legendary robe of the fire-rat, a cloth that will not burn.
-*   **For the Counselor Otomo:** The five-colored jewel from the neck of a dragon.
-*   **For the Counselor Isonokami:** A cowrie shell said to be born from a swallow.
+But Kaguya replied,
 
-Each of these was a treasure known only in legend, impossible to obtain.
+> “I will only marry someone who is truly kind and sincere. Let them each bring me something I wish for — something rare and special.”
 
-**Prince Ishitsukuri** simply took a common, soot-stained bowl from a mountain temple and presented it as the Buddha's. Kaguya saw through the lie at once, as the legendary bowl was said to glow with a holy light, and his did not.
+Each noble received a different, impossible task:
 
-**Prince Kuramochi** hired the finest craftsmen to forge a breathtakingly beautiful replica of the jeweled branch. He presented it to Kaguya, but just as she was being convinced, the craftsmen arrived, demanding to be paid for their work. His deception was revealed.
+* **Prince Ishitsukuri:** Bring the Buddha’s glowing bowl.
+* **Prince Kuramochi:** Find a jeweled tree branch from the island of Horai.
+* **Minister Abe:** Bring the robe of the fire-rat — a cloth that cannot burn.
+* **Counselor Otomo:** Bring a rainbow-colored jewel from a dragon’s neck.
+* **Counselor Isonokami:** Find a rare shell said to be born from a swallow.
 
-**The Minister Abe** purchased what a merchant from China claimed was the fire-rat's robe for a great sum of money. When Kaguya tested it by putting it in the fire, however, it burned to ashes instantly.
+None of them succeeded.
 
-**The Counselor Otomo** set out on a ship to find the dragon. He was caught in a terrible storm that nearly killed him, and he returned sick and defeated, having failed completely.
+* Prince Ishitsukuri brought a dirty bowl from a temple. Kaguya knew it was fake — it didn’t glow.
+* Prince Kuramochi made a fake branch using gold and pearls, but the craftsmen he hired arrived asking for payment, exposing the lie.
+* Minister Abe bought a robe from China and claimed it was fireproof — but it burned to ashes in the fire.
+* Counselor Otomo went to sea to find the dragon but was caught in a terrible storm and came home sick and empty-handed.
+* Counselor Isonokami climbed up high to a swallow’s nest but fell, badly hurt. What he found was just bird droppings.
 
-**The Counselor Isonokami** climbed to the roof of a great storehouse where swallows were nesting. Reaching into a nest, he thought he had grabbed the shell, but he lost his footing and fell, breaking his hip. What he held in his hand was not a cowrie shell, but an old, dry swallow's dropping. He fell ill from his injury and shame.
+Kaguya felt sad when she heard Counselor Isonokami died from his injury. But none of the nobles won her heart.
 
-When Kaguya heard the Counselor was on his deathbed, she sent a poem of consolation. He managed to write a reply before he died. Hearing this, Kaguya felt a pang of pity for him. In the end, not a single one of the nobles could complete her tasks.
+---
 
-## The Emperor's Proposal
+## The Emperor’s Visit
 
-The story of Princess Kaguya and her impossible tasks eventually reached the Emperor himself. Intrigued, he sent a messenger to see her, but Kaguya refused to meet him.
+Even the Emperor of Japan heard about Princess Kaguya and sent a messenger to meet her. But she refused to see him.
 
-The Emperor then summoned the old bamboo cutter and offered him a court rank if he would present Kaguya. Though the old man was overjoyed and pleaded with her, Kaguya remained firm.
+So the Emperor himself went to visit. When he saw her, he was overwhelmed by her beauty and tried to bring her to the palace.
 
-> "Even if it is the Emperor who summons me, I will not go. If you try to force me, I will simply disappear."
+But as he reached for her, Kaguya began to fade like a shadow.
 
-Undeterred, the Emperor devised a plan. He announced he was going on a royal hunt and used it as a pretext to visit the bamboo cutter’s house. He burst inside and saw a figure sitting in a room filled with light. It was Kaguya. Struck by her unearthly beauty, he tried to bring her to his palanquin to take her back to the palace.
+She said softly,
 
-But as he reached for her, her body dissolved into a mere shadow of light. At that moment, the Emperor understood she was not a mortal woman. Overcome with longing, he left, feeling as if he had left his very soul behind.
+> “I am not from this world. You must let me go.”
 
-From that day on, he could think of no one but her. All the court ladies he once found beautiful now seemed plain. He spent his days in solitude, exchanging letters and poems with Princess Kaguya.
+The Emperor left with a heavy heart. After that, he couldn’t forget her. He often sent her poems, and she replied with kind letters, but always stayed away.
 
-## Return to the Moon
+---
 
-Three years passed in this way. Then, one spring, Princess Kaguya began to gaze at the moon with a look of deep sorrow. As the full moon of the eighth month approached, she began to weep uncontrollably.
+## The Return to the Moon
 
-Worried, the old man asked her what was wrong. She finally confessed:
+Three years passed.
 
-> "I am not of this world. I am from the Capital of the Moon, and on the fifteenth of this month, I must return. I was sent here for only a short time, but so many years have passed. I cannot stay, even though it breaks my heart to leave you."
+One night, as the full moon grew near, Kaguya stared at the sky with tears in her eyes. She finally told her parents the truth:
 
-The Emperor was informed of this and, at the old man's request, sent two thousand soldiers to guard the house. On the night of the fifteenth, a thousand men stood on the roof, and a thousand stood on the ground. The old woman held Kaguya in her arms inside a windowless store-room, and the old man stood guard at the locked door.
+> “I come from the Moon. I was sent here as punishment. But now\... I must go back.”
 
-Kaguya told them:
+The old couple was heartbroken.
 
-> "It is no use. You cannot fight the people of my land. Their weapons are not of this world. When they arrive, every locked door will open on its own."
+The Emperor sent 2,000 soldiers to guard the house. They stood on the roof and on the ground, ready to protect her.
 
-And so it happened. Around midnight, the area around the house lit up as bright as day. Beings descended from the sky, riding on clouds, and hovered about five feet off the ground. The soldiers were seized with a strange terror; all the fight went out of them. Their arms grew weak, and they could not even draw their bows.
+But Kaguya said,
 
-A man who appeared to be their king called out, "Miyatsuko, come forth!" The old man, who had been so defiant, suddenly felt weak and fell to the ground. The king spoke:
+> “It’s no use. You cannot stop them. They are not of this Earth.”
 
-> "You have performed a small good deed, and as a reward, we sent the princess to you for a short time. With the gold she brought, you have become rich. Princess Kaguya was sent here as punishment for a crime she committed. Now her time is done. Release her."
+At midnight, a bright light filled the sky. Beings from the Moon floated down on clouds. The soldiers were frozen in fear — they couldn’t move.
 
-The old man refused to obey. A flying chariot was brought near the house. "Come, Princess Kaguya," the king said. "Why would you linger in such a defiled place?"
+The leader of the Moon people spoke:
 
-Instantly, all the locked doors flew open. Kaguya floated out of the old woman's arms and toward the chariot.
+> “Kaguya-hime’s time in your world is over. She must come home now.”
 
-Crying, she tried to comfort her parents, writing a final farewell letter. A celestial being offered her a box containing the **Celestial Robe of Feathers** and another with the **Elixir of Immortality**. As another being offered her the elixir, Kaguya took a small taste. Just as they were about to place the robe on her, she stopped them to write one last letter to the Emperor. In it was a poem:
+Kaguya wrote letters to her parents and to the Emperor. She was given a shining robe and a small bottle — the **Elixir of Immortality**.
 
-> Now, as I must go
-> and don this celestial robe,
-> my heart fills with sorrow
-> as I think of you,
-> my Lord.
+As soon as they put the robe on her, all her human memories and feelings disappeared. Her love and sorrow faded away.
 
-She gave the letter and the remaining elixir to an officer to deliver to the Emperor. The moment the officer took it, the celestial beings draped the Robe of Feathers over her shoulders. Instantly, all of her love and sorrow for the world vanished. All human memories and attachments were gone.
+She stepped into the flying chariot and rose into the night sky, leaving Earth behind.
 
-Princess Kaguya stepped into the flying chariot and ascended back to the moon.
+---
 
-## Epilogue: The Origin of Mount Fuji
+## The Smoke of Mount Fuji
 
-The Emperor read Kaguya's letter and was overcome with a grief so profound he could no longer eat or enjoy music. He summoned his advisors and asked:
+The Emperor was filled with grief. He read her letter and held the elixir in his hand.
 
-> "Which mountain is the closest to Heaven?"
+He said,
 
-An advisor told him of a great mountain in the province of Suruga. (This is **Mount Fuji**, the highest mountain in Japan.)
+> “Without her, I don’t want to live forever.”
 
-The Emperor composed a final poem, lamenting that without Kaguya, the elixir of immortality was meaningless to him. He then commanded his men to take Kaguya's letter and the elixir to the summit of that mountain and burn them.
+He gave orders to climb the highest mountain in Japan — **Mount Fuji** — and burn the letter and the elixir at the top.
 
-It is said that because the Emperor sent a great number of warriors, or **tsuwamono**, to that mountain, it came to be known as **Fuji no Yama** (The Mountain of Warriors). Others say its name comes from the elixir of **fushi** (immortality) that was burned there.
+It is said the name “Fuji” comes from the word **“fushi”**, which means **immortality**.
 
-The legend says that the smoke from that fire still rises from the mountain's peak and drifts among the clouds to this day.
+Even today, people say the smoke from that fire still rises from Mount Fuji, drifting up toward the Moon.
