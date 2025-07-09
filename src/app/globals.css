@@ -5,3 +5,8 @@
 body {
   @apply font-serif;
 }
+
+.prose blockquote p:first-of-type::before,
+.prose blockquote p:first-of-type::after {
+  content: none !important;
+}
