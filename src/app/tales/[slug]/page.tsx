@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { Interactions } from '@/app/components/interactions'
 import { InteractionBar } from '@/app/components/interaction-bar'
 import { createClient } from '@/utils/supabase/server'
+import { REACTION_DEFINITIONS } from '@/app/lib/interaction-types'
 
 // --- MOCK DATA (In a real app, you'd fetch this from a database based on the slug) ---
 const mockReactions = [
@@ -31,8 +32,17 @@ const TaleLayout = async ({ params }: { params: { slug: string } }) => {
     .select()
     .eq('slug', params.slug)
     .order('created_at', { ascending: false });
-  const reactions = mockReactions
-  //const comments = mockComments
+
+  const { data: reactionCounts, error: reactionsError } = await supabase
+    .from('tale_reactions')
+    .select('reaction_type, count')
+    .eq('slug', params.slug);
+
+  const countsMap = new Map(reactionCounts?.map(r => [r.reaction_type, r.count]) || []);
+  const reactions = REACTION_DEFINITIONS.map(def => ({
+    ...def,
+    count: countsMap.get(def.label) || 0,
+  }));
 
   return (
     <article className="prose mx-auto max-w-xl py-8 px-4">

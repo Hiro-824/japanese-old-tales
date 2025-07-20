@@ -1,7 +1,7 @@
 'use server'
 
 import { createClient } from '@/utils/supabase/server'
-import { Comment } from '../components/interactions'
+import { Comment } from '../lib/interaction-types'
 
 export async function insertData(comment: Comment) {
     // Supabaseクライアントを作成

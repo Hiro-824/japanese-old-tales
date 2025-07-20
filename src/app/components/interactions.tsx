@@ -3,18 +3,12 @@
 import { useState } from 'react'
 import { insertData } from '../insert/actions';
 import { formatRelativeDate } from '@/utils/formatDate';
+import { Comment } from '../lib/interaction-types'
 
 type Reaction = {
   emoji: string;
   label: string;
   count: number;
-}
-export type Comment = {
-  created_at: string;
-  id: number;
-  nickname: string | null;
-  slug: string | null;
-  text: string | null;
 }
 
 type InteractionsProps = {
