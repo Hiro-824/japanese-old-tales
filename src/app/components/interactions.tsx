@@ -16,32 +16,6 @@ export function Interactions({ initialReactions, initialComments, slug }: Intera
   const [selectedReaction, setSelectedReaction] = useState<Reaction | null>(null)
   const [comments, setComments] = useState(initialComments)
 
-  /*const handleReactionClick = (reaction: Reaction) => {
-    const oldSelected = selectedReaction;
-    let newReactions = [...reactions];
-
-    if (oldSelected?.label === reaction.label) {
-      newReactions = newReactions.map(r =>
-        r.label === reaction.label ? { ...r, count: r.count - 1 } : r
-      );
-      setSelectedReaction(null);
-      updateReaction(slug, reaction.label, 'decrement');
-    } else {
-      if (oldSelected) {
-        newReactions = newReactions.map(r =>
-          r.label === oldSelected.label ? { ...r, count: r.count - 1 } : r
-        );
-        updateReaction(slug, oldSelected.label, 'decrement');
-      }
-      newReactions = newReactions.map(r =>
-        r.label === reaction.label ? { ...r, count: r.count + 1 } : r
-      );
-      setSelectedReaction(reaction);
-      updateReaction(slug, reaction.label, 'increment');
-    }
-    setReactions(newReactions);
-  }*/
-
   const handleReactionClick = (reaction: Reaction) => {
     const oldSelected = selectedReaction;
     let newReactions = [...reactions];
