@@ -1,3 +1,10 @@
+import { Tale } from ".contentlayer/generated/types";
+
+export type InteractionsLoaderProps = {
+    tale: Tale;
+    slug: string;
+}
+
 export type Comment = {
     created_at: string;
     id: number;

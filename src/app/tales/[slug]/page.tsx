@@ -1,11 +1,8 @@
+import { Suspense } from 'react';
 import { allTales } from 'contentlayer/generated'
 import Link from 'next/link'
-import { createClient } from '@/utils/supabase/server'
-import { REACTION_DEFINITIONS } from '@/app/lib/interaction-types'
-import { TaleContent } from '@/app/components/tale-content' // Import the new wrapper
-
-// Mock data is no longer needed here as we fetch real data
-// ...
+import { InteractionsLoader } from '@/app/components/interactions-loader';
+import { InteractionsSkeleton } from '@/app/components/interactions-skeleton';
 
 export const generateStaticParams = async () => allTales.map((tale) => ({ slug: tale._raw.flattenedPath }))
 
@@ -15,27 +12,12 @@ export const generateMetadata = ({ params }: { params: { slug: string } }) => {
   return { title: tale.title }
 }
 
-const TaleLayout = async ({ params }: { params: { slug: string } }) => {
+const TaleLayout = ({ params }: { params: { slug: string } }) => {
   const tale = allTales.find((tale) => tale._raw.flattenedPath === params.slug)
   if (!tale) throw new Error(`Tale not found for slug: ${params.slug}`)
 
-  const supabase = createClient();
-  const { data: comments, error } = await supabase
-    .from('comments')
-    .select()
-    .eq('slug', params.slug)
-    .order('created_at', { ascending: false });
-
-  const { data: reactionCounts, error: reactionsError } = await supabase
-    .from('tale_reactions')
-    .select('reaction_type, count')
-    .eq('slug', params.slug);
-
-  const countsMap = new Map(reactionCounts?.map(r => [r.reaction_type, r.count]) || []);
-  const reactions = REACTION_DEFINITIONS.map(def => ({
-    ...def,
-    count: countsMap.get(def.label) || 0,
-  }));
+  // Data fetching is REMOVED from the main page component.
+  // It's now handled inside InteractionsLoader.
 
   return (
     <article className="prose mx-auto max-w-xl py-8 px-4">
@@ -51,14 +33,17 @@ const TaleLayout = async ({ params }: { params: { slug: string } }) => {
         </Link>
       </div>
 
-      {/* --- RENDER THE CLIENT WRAPPER --- */}
-      {/* We pass all the fetched data and content to this single client component */}
-      <TaleContent
-        tale={tale}
-        initialReactions={reactions}
-        initialComments={comments ?? []}
-        slug={params.slug}
-      />
+      {/* --- Wrap the slow part in Suspense --- */}
+      <Suspense fallback={<InteractionsSkeleton />}>
+        {/* 
+          This async component will be awaited on the server.
+          While it's loading, the fallback will be shown instantly.
+          The page's static content is outside the Suspense boundary, 
+          so it renders immediately.
+        */}
+        <InteractionsLoader tale={tale} slug={params.slug} />
+      </Suspense>
+
     </article>
   )
 }
