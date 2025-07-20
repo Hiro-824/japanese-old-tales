@@ -1,8 +1,4 @@
-type Reaction = {
-  emoji: string;
-  label: string;
-  count: number;
-}
+import { Reaction } from "../lib/interaction-types";
 
 type InteractionBarProps = {
   reactions: Reaction[];
