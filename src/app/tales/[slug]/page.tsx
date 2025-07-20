@@ -1,18 +1,11 @@
 import { allTales } from 'contentlayer/generated'
 import Link from 'next/link'
-import { Interactions } from '@/app/components/interactions'
-import { InteractionBar } from '@/app/components/interaction-bar'
 import { createClient } from '@/utils/supabase/server'
 import { REACTION_DEFINITIONS } from '@/app/lib/interaction-types'
+import { TaleContent } from '@/app/components/tale-content' // Import the new wrapper
 
-// --- MOCK DATA (In a real app, you'd fetch this from a database based on the slug) ---
-const mockReactions = [
-  { emoji: '❤️', label: 'love', count: 27 },
-  { emoji: '🙏', label: 'thanks', count: 18 },
-  { emoji: '😮', label: 'surprised', count: 5 },
-  { emoji: '😢', label: 'sad', count: 11 },
-]
-// --- END MOCK DATA ---
+// Mock data is no longer needed here as we fetch real data
+// ...
 
 export const generateStaticParams = async () => allTales.map((tale) => ({ slug: tale._raw.flattenedPath }))
 
@@ -57,18 +50,15 @@ const TaleLayout = async ({ params }: { params: { slug: string } }) => {
           </svg>
         </Link>
       </div>
-      <div className="mb-8 text-left">
-        <h1 className="text-3xl font-bold">{tale.title}</h1>
-      </div>
 
-      {/* --- NEW INTERACTION BAR --- */}
-      <InteractionBar reactions={reactions} commentCount={comments?.length ?? 0} />
-
-      {/* --- STORY CONTENT --- */}
-      <div className="[&>*]:mb-3 [&>*:last-child]:mb-0" dangerouslySetInnerHTML={{ __html: tale.body.html }} />
-
-      {/* --- INTERACTION SECTION AT THE BOTTOM --- */}
-      <Interactions initialReactions={reactions} initialComments={comments ?? []} slug={params.slug} />
+      {/* --- RENDER THE CLIENT WRAPPER --- */}
+      {/* We pass all the fetched data and content to this single client component */}
+      <TaleContent
+        tale={tale}
+        initialReactions={reactions}
+        initialComments={comments ?? []}
+        slug={params.slug}
+      />
     </article>
   )
 }

@@ -1,46 +1,24 @@
 'use client'
 
-import { useState } from 'react'
-import { insertData, updateReaction } from '../insert/actions';
-import { formatRelativeDate } from '@/utils/formatDate';
+import { formatRelativeDate } from '@/utils/formatDate'
 import { Comment, Reaction } from '../lib/interaction-types'
 
 type InteractionsProps = {
-  initialReactions: Reaction[];
-  initialComments: Comment[];
-  slug: string;
+  reactions: Reaction[];
+  comments: Comment[];
+  selectedReaction: Reaction | null;
+  onReactionClick: (reaction: Reaction) => void;
+  onCommentSubmit: (commentData: { nickname: string; text: string }) => void;
 }
 
-export function Interactions({ initialReactions, initialComments, slug }: InteractionsProps) {
-  const [reactions, setReactions] = useState(initialReactions)
-  const [selectedReaction, setSelectedReaction] = useState<Reaction | null>(null)
-  const [comments, setComments] = useState(initialComments)
-
-  const handleReactionClick = (reaction: Reaction) => {
-    const oldSelected = selectedReaction;
-    let newReactions = [...reactions];
-
-    if (oldSelected?.label === reaction.label) {
-      newReactions = newReactions.map(r =>
-        r.label === reaction.label ? { ...r, count: r.count - 1 } : r
-      );
-      setSelectedReaction(null);
-      updateReaction(slug, reaction.label, 'decrement');
-    } else {
-      if (oldSelected) {
-        newReactions = newReactions.map(r =>
-          r.label === oldSelected.label ? { ...r, count: r.count - 1 } : r
-        );
-        updateReaction(slug, oldSelected.label, 'decrement');
-      }
-      newReactions = newReactions.map(r =>
-        r.label === reaction.label ? { ...r, count: r.count + 1 } : r
-      );
-      setSelectedReaction(reaction);
-      updateReaction(slug, reaction.label, 'increment');
-    }
-    setReactions(newReactions);
-  }
+export function Interactions({
+  reactions,
+  comments,
+  selectedReaction,
+  onReactionClick,
+  onCommentSubmit
+}: InteractionsProps) {
+  // State and handlers are removed from here. They now live in the parent.
 
   const handleCommentSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
@@ -53,31 +31,21 @@ export function Interactions({ initialReactions, initialComments, slug }: Intera
       return
     }
 
-    const newComment: Comment = {
-      id: Date.now(),
-      slug: slug,
-      nickname,
-      text,
-      created_at: 'Just now',
-    }
-
-    setComments([newComment, ...comments])
-    insertData(newComment);
+    // Call the parent handler
+    onCommentSubmit({ nickname, text });
     event.currentTarget.reset()
   }
 
-
   return (
-    // Add the id="interactions" here for our anchor link to target
     <div id="interactions" className="mt-16 pt-12 border-t border-gray-200 mb-40">
-      {/* ... The rest of the JSX for reactions and comments remains exactly the same ... */}
       <div className="text-center">
         <h2 className="text-xl font-bold mb-4">What did you think?</h2>
         <div className="flex justify-center gap-2 sm:gap-4">
           {reactions.map((reaction) => (
             <button
               key={reaction.label}
-              onClick={() => handleReactionClick(reaction)}
+              // Call the parent handler
+              onClick={() => onReactionClick(reaction)}
               aria-label={`React with ${reaction.label}`}
               className={`flex items-center gap-2 rounded-full border px-3 py-2 text-sm transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2
                 ${selectedReaction?.label === reaction.label
@@ -94,6 +62,7 @@ export function Interactions({ initialReactions, initialComments, slug }: Intera
       <div className="mt-16">
         <h2 className="text-xl font-bold mb-6">Comments ({comments.length})</h2>
         <form onSubmit={handleCommentSubmit} className="mb-8 p-4 bg-gray-50 rounded-lg">
+          {/* ... The rest of the form JSX remains exactly the same ... */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             <div className="sm:col-span-1">
               <label htmlFor="nickname" className="block text-sm font-medium text-gray-700 mb-1">
