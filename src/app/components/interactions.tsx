@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import { insertData } from '../insert/actions';
+import { formatRelativeDate } from '@/utils/formatDate';
 
 type Reaction = {
   emoji: string;
@@ -29,7 +30,7 @@ export function Interactions({ initialReactions, initialComments, slug }: Intera
 
   const handleReactionClick = (reaction: Reaction) => {
     if (selectedReaction?.label === reaction.label) {
-      setReactions(reactions.map(r => 
+      setReactions(reactions.map(r =>
         r.label === reaction.label ? { ...r, count: r.count - 1 } : r
       ))
       setSelectedReaction(null)
@@ -147,7 +148,7 @@ export function Interactions({ initialReactions, initialComments, slug }: Intera
                 <p className="font-bold text-gray-900">
                   {comment.nickname}
                   <span className="ml-2 text-sm font-normal text-gray-500">
-                    {comment.created_at}
+                    {formatRelativeDate(comment.created_at)}
                   </span>
                 </p>
                 <p className="mt-1 text-gray-700">{comment.text}</p>
