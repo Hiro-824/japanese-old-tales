@@ -29,7 +29,8 @@ const TaleLayout = async ({ params }: { params: { slug: string } }) => {
   const { data: comments, error } = await supabase
     .from('comments')
     .select()
-    .eq('slug', params.slug);
+    .eq('slug', params.slug)
+    .order('created_at', { ascending: false });
   const reactions = mockReactions
   //const comments = mockComments
 
