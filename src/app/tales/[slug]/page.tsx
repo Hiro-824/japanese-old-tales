@@ -2,6 +2,7 @@ import { allTales } from 'contentlayer/generated'
 import Link from 'next/link'
 import { Interactions } from '@/app/components/interactions'
 import { InteractionBar } from '@/app/components/interaction-bar'
+import { createClient } from '@/utils/supabase/server'
 
 // --- MOCK DATA (In a real app, you'd fetch this from a database based on the slug) ---
 const mockReactions = [
@@ -9,10 +10,6 @@ const mockReactions = [
   { emoji: '🙏', label: 'thanks', count: 18 },
   { emoji: '😮', label: 'surprised', count: 5 },
   { emoji: '😢', label: 'sad', count: 11 },
-]
-const mockComments = [
-  { id: 1, nickname: 'Bookworm', timestamp: '2 days ago', text: 'What a beautiful and timeless story. It really makes you think.' },
-  { id: 2, nickname: 'Taro', timestamp: '1 day ago', text: 'I remember my grandmother telling me this tale when I was a child. Thank you for bringing back the memories!' },
 ]
 // --- END MOCK DATA ---
 
@@ -24,13 +21,17 @@ export const generateMetadata = ({ params }: { params: { slug: string } }) => {
   return { title: tale.title }
 }
 
-const TaleLayout = ({ params }: { params: { slug: string } }) => {
+const TaleLayout = async ({ params }: { params: { slug: string } }) => {
   const tale = allTales.find((tale) => tale._raw.flattenedPath === params.slug)
   if (!tale) throw new Error(`Tale not found for slug: ${params.slug}`)
 
-  // In a real app, you would fetch these based on `params.slug`
+  const supabase = createClient();
+  const { data: comments, error } = await supabase
+    .from('comments')
+    .select()
+    .eq('slug', params.slug);
   const reactions = mockReactions
-  const comments = mockComments
+  //const comments = mockComments
 
   return (
     <article className="prose mx-auto max-w-xl py-8 px-4">
@@ -50,13 +51,13 @@ const TaleLayout = ({ params }: { params: { slug: string } }) => {
       </div>
 
       {/* --- NEW INTERACTION BAR --- */}
-      <InteractionBar reactions={reactions} commentCount={comments.length} />
+      <InteractionBar reactions={reactions} commentCount={comments?.length ?? 0} />
 
       {/* --- STORY CONTENT --- */}
       <div className="[&>*]:mb-3 [&>*:last-child]:mb-0" dangerouslySetInnerHTML={{ __html: tale.body.html }} />
 
       {/* --- INTERACTION SECTION AT THE BOTTOM --- */}
-      <Interactions initialReactions={reactions} initialComments={comments} />
+      <Interactions initialReactions={reactions} initialComments={comments ?? []} slug={params.slug} />
     </article>
   )
 }

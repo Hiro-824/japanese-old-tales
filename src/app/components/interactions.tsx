@@ -1,25 +1,28 @@
 'use client'
 
 import { useState } from 'react'
+import { insertData } from '../insert/actions';
 
 type Reaction = {
   emoji: string;
   label: string;
   count: number;
 }
-type Comment = {
+export type Comment = {
+  created_at: string;
   id: number;
-  nickname: string;
-  timestamp: string;
-  text: string;
+  nickname: string | null;
+  slug: string | null;
+  text: string | null;
 }
 
 type InteractionsProps = {
   initialReactions: Reaction[];
   initialComments: Comment[];
+  slug: string;
 }
 
-export function Interactions({ initialReactions, initialComments }: InteractionsProps) {
+export function Interactions({ initialReactions, initialComments, slug }: InteractionsProps) {
   const [reactions, setReactions] = useState(initialReactions)
   const [selectedReaction, setSelectedReaction] = useState<Reaction | null>(null)
   const [comments, setComments] = useState(initialComments)
@@ -58,12 +61,14 @@ export function Interactions({ initialReactions, initialComments }: Interactions
 
     const newComment: Comment = {
       id: Date.now(),
+      slug: slug,
       nickname,
       text,
-      timestamp: 'Just now',
+      created_at: 'Just now',
     }
 
     setComments([newComment, ...comments])
+    insertData(newComment);
     event.currentTarget.reset()
   }
 
@@ -136,13 +141,13 @@ export function Interactions({ initialReactions, initialComments }: Interactions
           {comments.map((comment) => (
             <div key={comment.id} className="flex items-start gap-4">
               <div className="flex-shrink-0 h-10 w-10 rounded-full bg-gray-200 flex items-center justify-center text-lg font-serif">
-                {comment.nickname.charAt(0)}
+                {comment.nickname?.charAt(0)}
               </div>
               <div>
                 <p className="font-bold text-gray-900">
                   {comment.nickname}
                   <span className="ml-2 text-sm font-normal text-gray-500">
-                    {comment.timestamp}
+                    {comment.created_at}
                   </span>
                 </p>
                 <p className="mt-1 text-gray-700">{comment.text}</p>
