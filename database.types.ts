@@ -68,11 +68,15 @@ export type Database = {
     }
     Functions: {
       decrement_reaction: {
-        Args: Record<PropertyKey, never>
+        Args:
+          | Record<PropertyKey, never>
+          | { slug_text: string; reaction_type_text: string }
         Returns: undefined
       }
       increment_reaction: {
-        Args: Record<PropertyKey, never>
+        Args:
+          | Record<PropertyKey, never>
+          | { slug_text: string; reaction_type_text: string }
         Returns: undefined
       }
     }

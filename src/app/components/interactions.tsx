@@ -1,15 +1,9 @@
 'use client'
 
 import { useState } from 'react'
-import { insertData } from '../insert/actions';
+import { insertData, updateReaction } from '../insert/actions';
 import { formatRelativeDate } from '@/utils/formatDate';
-import { Comment } from '../lib/interaction-types'
-
-type Reaction = {
-  emoji: string;
-  label: string;
-  count: number;
-}
+import { Comment, Reaction } from '../lib/interaction-types'
 
 type InteractionsProps = {
   initialReactions: Reaction[];
@@ -22,25 +16,56 @@ export function Interactions({ initialReactions, initialComments, slug }: Intera
   const [selectedReaction, setSelectedReaction] = useState<Reaction | null>(null)
   const [comments, setComments] = useState(initialComments)
 
-  const handleReactionClick = (reaction: Reaction) => {
-    if (selectedReaction?.label === reaction.label) {
-      setReactions(reactions.map(r =>
+  /*const handleReactionClick = (reaction: Reaction) => {
+    const oldSelected = selectedReaction;
+    let newReactions = [...reactions];
+
+    if (oldSelected?.label === reaction.label) {
+      newReactions = newReactions.map(r =>
         r.label === reaction.label ? { ...r, count: r.count - 1 } : r
-      ))
-      setSelectedReaction(null)
+      );
+      setSelectedReaction(null);
+      updateReaction(slug, reaction.label, 'decrement');
     } else {
-      let newReactions = [...reactions]
-      if (selectedReaction) {
+      if (oldSelected) {
         newReactions = newReactions.map(r =>
-          r.label === selectedReaction.label ? { ...r, count: r.count - 1 } : r
-        )
+          r.label === oldSelected.label ? { ...r, count: r.count - 1 } : r
+        );
+        updateReaction(slug, oldSelected.label, 'decrement');
       }
       newReactions = newReactions.map(r =>
         r.label === reaction.label ? { ...r, count: r.count + 1 } : r
-      )
-      setReactions(newReactions)
-      setSelectedReaction(reaction)
+      );
+      setSelectedReaction(reaction);
+      updateReaction(slug, reaction.label, 'increment');
     }
+    setReactions(newReactions);
+  }*/
+
+  const handleReactionClick = (reaction: Reaction) => {
+    const oldSelected = selectedReaction;
+    let newReactions = [...reactions];
+
+    if (oldSelected?.label === reaction.label) {
+      newReactions = newReactions.map(r =>
+        r.label === reaction.label ? { ...r, count: r.count - 1 } : r
+      );
+      setSelectedReaction(null);
+      updateReaction(slug, reaction.label, 'decrement');
+    } else {
+      if (oldSelected) {
+        newReactions = newReactions.map(r =>
+          r.label === oldSelected.label ? { ...r, count: r.count - 1 } : r
+        );
+        updateReaction(slug, oldSelected.label, 'decrement');
+      }
+      newReactions = newReactions.map(r =>
+        r.label === reaction.label ? { ...r, count: r.count + 1 } : r
+      );
+      setSelectedReaction(reaction);
+      updateReaction(slug, reaction.label, 'increment');
+    }
+    setReactions(newReactions);
   }
 
   const handleCommentSubmit = (event: React.FormEvent<HTMLFormElement>) => {

@@ -6,6 +6,12 @@ export type Comment = {
     text: string | null;
 }
 
+export type Reaction = {
+    emoji: string;
+    label: "love" | "thanks" | "surprised" | "sad";
+    count: number;
+}
+
 export const REACTION_DEFINITIONS = [
     { emoji: '❤️', label: 'love' },
     { emoji: '🙏', label: 'thanks' },
